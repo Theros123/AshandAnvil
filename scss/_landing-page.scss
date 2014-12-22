@@ -1,6 +1,7 @@
 .hero-wrapper {
 	background: url('../images/hero-bg.jpg');
 	background-size: cover;
+	background-position: top;
 	min-height: 600px;
 
 	.logo-wrapper {
@@ -11,6 +12,10 @@
 
 	.text-content {
 		margin-top: 4em;
+	}
+	
+	.button {
+		margin-top: 1em;
 	}
 
 	h1 {
@@ -28,8 +33,70 @@
 .showcase-wrapper {
 	background: $grey;
 
-	.text-content {
+	.text-content {}
 
+	h2 {
+		margin-top: 0;
+		color: $purple;
+	}
+	
+	.media-object-wrapper {
+		margin: 1em 0;
+	}
+	.media-object-panel {
+		&.inline {
+			padding: 0;
+			display: inline-block;
+			vertical-align: top;
+			width: 19%;
+			margin: 0 .625%;
+			
+			a {
+				display: block;
+				opacity: .7;
+
+				&:hover {
+					opacity: 1;
+
+					.fa-plus-circle {
+						color: $purple;
+					}
+				}
+			}
+
+			.panel {
+				padding: 0;
+				margin: 0;
+			}
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+
+		p, h3 {
+			margin: 0;
+		}
+
+		.image {
+			height: 230px;
+
+			&.steven-mazur {
+				background: url('../images/showcase/steve-mazur.jpg');
+				background-position: center top;
+				background-size: cover;
+			}
+			&.zach-olson {
+				background: url('../images/showcase/zach-olson.jpg');
+				background-position: center top;
+				background-size: cover;
+			}
+		}
+		.text {
+			padding: .5em 1em;
+		}
 	}
 }
 
