@@ -1,0 +1,39 @@
+.hero-wrapper {
+	background: url('../images/hero-bg.jpg');
+	background-size: cover;
+	min-height: 600px;
+
+	.logo-wrapper {
+		color: $purple;
+		border: 3px solid $purple;
+		font-size: 1em;
+	}
+
+	.text-content {
+		margin-top: 4em;
+	}
+
+	h1 {
+		margin: 1em 0 0;
+		line-height: 1.1;
+		font-weight: bold;
+	}
+	h3 {
+		font-size: 1.5em;
+		line-height: 1.2;
+		margin-top: .5em;
+	}
+}
+
+.showcase-wrapper {
+	background: $grey;
+
+	.text-content {
+
+	}
+}
+
+.story-wrapper {
+	background: $purple;
+	color: $white;
+}
