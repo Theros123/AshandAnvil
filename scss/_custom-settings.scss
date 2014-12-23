@@ -1,15 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400);
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
 
+html, body {
+	height: 100%;
+	position: relative;
+}
+.landing-page {
+	min-height: 700px;
+}
+
 h1, h2, h3, h4, h5, p {
 	font-family: 'Roboto', sans-serif;
 }
 p {
-	line-height: 1.3;
+	line-height: 1.5;
+	font-weight: 100;
 }
 
 $white:   white;
 $grey:    #E8E7EC;
+$darkGrey: #333;
 $purple:  #271448;
 
 // Turn this into a mixin later
@@ -17,6 +27,7 @@ $purple:  #271448;
 	font-family: 'Roboto Slab', serif;
 	text-transform: uppercase;
 	padding: .5em 1em;
+	transition: background-color 300ms ease-out;
 }
 
 .layout-row {
@@ -26,20 +37,52 @@ $purple:  #271448;
 .button {
 	font-family: 'Roboto', sans-serif;
 	padding: .7em 2em;
+	margin: 0;
 
-	&.regular {
-		background: $purple;
+	&.white {
+		background: transparent;
+		border: 3px solid $white;
+		color: $white;
 
-		&:hover {
-			background: darken($purple, 10%);
+		&:hover, &:active {
+			background: $white;
+			color: $purple;
+		}
+		&.sign-up-button {
+			border-left: 0;
+			border-top: 1px solid $white;
+			border-right: 1px solid $white;
+			border-bottom: 1px solid $white;
 		}
 	}
-	&.inverse {
-		background: $white;
+	&.grey {
+		background: transparent;
+		border: 3px solid $darkGrey;
+		color: $darkGrey;
 
-		&:hover {
-			background: darken($white, 10%);
+		&:hover, &:active {
+			background: $white;
+			color: $purple;
 		}
+		&.sign-up-button {
+			border-left: 0;
+			border-top: 1px solid $darkGrey;
+			border-right: 1px solid $darkGrey;
+			border-bottom: 1px solid $darkGrey;
+		}
+	}
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+	margin: 0;
+
+	&.white {
+		color: $white;
+		background: transparent;
+	}
+	&.grey {
+		color: $darkGrey;
+		background: transparent;
+		border: 1px solid $darkGrey;
 	}
 }
 
@@ -99,4 +142,11 @@ $purple:  #271448;
 		font-size: 3em;
 		color: $grey;
 	}
+}
+
+.panel {
+	padding: 0;
+	border: none;
+
+	@include box-shadow(1px, 2px, 3px, rgba(50,50,50,.35));
 }

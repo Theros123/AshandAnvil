@@ -1,7 +1,88 @@
 .title-wrapper {
-	background: $purple;
+	background: $darkGrey;
 	color: $white;
+	text-align: center;
+	position: relative;
 
-	.text-content {
+	.layout-row {
+		padding: 1em 0;
+	}
+
+	.go-back {
+		position: absolute;
+		left: 0.9375rem;
+		color: $white;
+
+		&:hover, &:active {
+			color: darken($white, 10%);
+		}
+	}
+
+	.logo-wrapper {
+		color: $white;
+		border: 3px solid $white;
+		font-size: 1em;
+
+		&:hover, &:active {
+			border-color: $purple;
+			background: $purple;
+		}
+	}
+}
+
+.articles-wrapper {
+	background: $grey;
+
+	.row + .row {
+		padding-top: 0;
+	}
+
+	h2 {
+		color: $purple;
+		margin: 0;
+	}
+	
+	.panel-link {
+		display: block;
+		opacity: .7;
+
+		&:hover, &:active {
+			opacity: 1;
+		}
+	}
+	.panel {
+		position: relative;
+		overflow: hidden;
+		min-height: 250px;
+	}
+	.text {
+		position: absolute;
+		z-index: 2;
+		background: white;
+		padding: 1em 1.5em;
+		width: 50%;
+		top: 0;
+		right: -1px;
+
+		h4 {
+			margin: 0;
+			line-height: 1.3;
+			padding-bottom: .5em;
+			border-bottom: 1px solid $purple;
+		}
+		p {
+			padding-top: .5em;
+		}
+	}
+	.image-wrapper {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+	}
+
+	.sign-up {
+		padding-top: 1em;
+		border-top: 2px solid $purple;
 	}
 }
