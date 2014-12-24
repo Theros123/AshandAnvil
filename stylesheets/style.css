@@ -9053,7 +9053,7 @@ html, body {
 
 /* line 8, ../scss/_custom-settings.scss */
 .landing-page {
-  min-height: 700px;
+  min-height: 830px;
 }
 
 /* line 12, ../scss/_custom-settings.scss */
@@ -9144,53 +9144,98 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   position: fixed;
 }
 
-/* line 93, ../scss/_custom-settings.scss */
+/* line 92, ../scss/_custom-settings.scss */
+.reveal-modal, dialog {
+  width: 100%;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 92, ../scss/_custom-settings.scss */
+  .reveal-modal, dialog {
+    width: inherit;
+  }
+}
+/* line 99, ../scss/_custom-settings.scss */
 .reveal-modal.showcase, dialog.showcase {
   padding: 0;
-  height: 70%;
-  min-height: 400px;
   border: none;
   border-radius: 0;
 }
-/* line 100, ../scss/_custom-settings.scss */
-.reveal-modal.showcase .large-image, dialog.showcase .large-image, .reveal-modal.showcase .text, dialog.showcase .text {
-  display: inline-block;
-  vertical-align: top;
-}
 /* line 104, ../scss/_custom-settings.scss */
-.reveal-modal.showcase .large-image, dialog.showcase .large-image {
-  width: 60%;
+.reveal-modal.showcase .image-wrapper, dialog.showcase .image-wrapper {
+  position: relative;
+  height: 15rem;
+  overflow: hidden;
+}
+/* line 109, ../scss/_custom-settings.scss */
+.reveal-modal.showcase .image-wrapper .title, dialog.showcase .image-wrapper .title {
+  position: absolute;
+  z-index: 3;
+  bottom: 1rem;
+  left: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.35);
+}
+/* line 117, ../scss/_custom-settings.scss */
+.reveal-modal.showcase .image-wrapper .overlay, dialog.showcase .image-wrapper .overlay {
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
   height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
-/* line 108, ../scss/_custom-settings.scss */
-.reveal-modal.showcase .large-image.zach-olson, dialog.showcase .large-image.zach-olson {
-  background: url("../images/showcase/zach-olson.jpg");
-  background-size: cover;
-  background-position: center top;
+/* line 125, ../scss/_custom-settings.scss */
+.reveal-modal.showcase .image-wrapper img, dialog.showcase .image-wrapper img {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  height: 100%;
+  left: 0;
+  top: 0%;
 }
-/* line 114, ../scss/_custom-settings.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 125, ../scss/_custom-settings.scss */
+  .reveal-modal.showcase .image-wrapper img, dialog.showcase .image-wrapper img {
+    top: -30%;
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 141, ../scss/_custom-settings.scss */
 .reveal-modal.showcase .text, dialog.showcase .text {
-  width: 40%;
-  padding: 1em 1.5em;
+  width: 100%;
+  padding: 1rem 1.5rem;
 }
-/* line 118, ../scss/_custom-settings.scss */
-.reveal-modal.showcase .text .height, dialog.showcase .text .height {
+/* line 145, ../scss/_custom-settings.scss */
+.reveal-modal.showcase .text .author, dialog.showcase .text .author {
   margin: 0;
   font-weight: bold;
 }
-/* line 122, ../scss/_custom-settings.scss */
-.reveal-modal.showcase .text .name, dialog.showcase .text .name {
+/* line 149, ../scss/_custom-settings.scss */
+.reveal-modal.showcase .text .date, dialog.showcase .text .date {
   margin: 0;
   padding-bottom: 1em;
   border-bottom: 2px solid #271448;
 }
-/* line 127, ../scss/_custom-settings.scss */
+/* line 154, ../scss/_custom-settings.scss */
 .reveal-modal.showcase .text .leading-content, dialog.showcase .text .leading-content {
   margin-top: 0;
   padding-top: 1em;
 }
+/* line 158, ../scss/_custom-settings.scss */
+.reveal-modal.showcase .text .content-image, dialog.showcase .text .content-image {
+  float: right;
+  padding-left: 3em;
+  clear: both;
+  max-width: 50%;
+}
 
-/* line 135, ../scss/_custom-settings.scss */
+/* line 167, ../scss/_custom-settings.scss */
+.reveal-modal .close-reveal-modal, dialog .close-reveal-modal, dialog .close-reveal-modal {
+  z-index: 100;
+}
+
+/* line 171, ../scss/_custom-settings.scss */
 .plus-button {
   display: -webkit-box;
   display: -moz-box;
@@ -9200,14 +9245,14 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   min-height: 100%;
   height: 100%;
 }
-/* line 140, ../scss/_custom-settings.scss */
+/* line 176, ../scss/_custom-settings.scss */
 .plus-button .fa-plus-circle {
   margin: auto;
   font-size: 3em;
   color: #E8E7EC;
 }
 
-/* line 147, ../scss/_custom-settings.scss */
+/* line 183, ../scss/_custom-settings.scss */
 .panel {
   padding: 0;
   border: none;
@@ -9220,7 +9265,7 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
 .hero-wrapper {
   background: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: top right;
+  background-position: center;
   min-height: 100%;
   height: 100%;
 }
@@ -9240,23 +9285,35 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
 }
 /* line 21, ../scss/_landing-page.scss */
 .hero-wrapper .text-content {
-  margin-top: 3em;
+  margin-top: 1em;
 }
-/* line 25, ../scss/_landing-page.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 21, ../scss/_landing-page.scss */
+  .hero-wrapper .text-content {
+    margin-top: 3em;
+  }
+}
+/* line 29, ../scss/_landing-page.scss */
 .hero-wrapper .button {
   margin-top: 1em;
 }
-/* line 29, ../scss/_landing-page.scss */
+/* line 33, ../scss/_landing-page.scss */
 .hero-wrapper h1 {
   color: white;
   margin: 1em 0 0;
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.1;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.35);
 }
+@media only screen and (min-width: 40.063em) {
+  /* line 33, ../scss/_landing-page.scss */
+  .hero-wrapper h1 {
+    font-size: 2.5em;
+  }
+}
 
-/* line 39, ../scss/_landing-page.scss */
+/* line 47, ../scss/_landing-page.scss */
 .footer-wrapper {
   position: absolute;
   bottom: 0;
@@ -9264,59 +9321,88 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   background: rgba(50, 50, 50, 0.9);
   color: white;
 }
-/* line 46, ../scss/_landing-page.scss */
+/* line 54, ../scss/_landing-page.scss */
 .footer-wrapper .layout-row {
   padding: 2em 0;
 }
-/* line 50, ../scss/_landing-page.scss */
+/* line 58, ../scss/_landing-page.scss */
 .footer-wrapper h3 {
   color: white;
   margin: 0;
   padding-bottom: 1em;
   border-bottom: 2px solid white;
 }
-/* line 57, ../scss/_landing-page.scss */
+/* line 65, ../scss/_landing-page.scss */
 .footer-wrapper .layout-inner-row {
   padding-top: 1.5em;
 }
-/* line 60, ../scss/_landing-page.scss */
+/* line 68, ../scss/_landing-page.scss */
 .footer-wrapper .layout-inner-row .inline {
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 64, ../scss/_landing-page.scss */
+/* line 72, ../scss/_landing-page.scss */
 .footer-wrapper .layout-inner-row .sign-up {
-  width: 40%;
-  padding-left: 1.5em;
+  width: 100%;
 }
-/* line 68, ../scss/_landing-page.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 72, ../scss/_landing-page.scss */
+  .footer-wrapper .layout-inner-row .sign-up {
+    width: 40%;
+    padding-left: 1.5em;
+  }
+}
+/* line 80, ../scss/_landing-page.scss */
+.footer-wrapper .layout-inner-row .sign-up p {
+  margin: 0;
+  padding-bottom: 1em;
+}
+/* line 84, ../scss/_landing-page.scss */
+.footer-wrapper .layout-inner-row .sign-up label {
+  color: white;
+}
+/* line 89, ../scss/_landing-page.scss */
 .footer-wrapper .layout-inner-row .text {
-  width: 60%;
-  padding-right: 1.5em;
+  width: 100%;
+  padding-bottom: 1.5em;
 }
-/* line 73, ../scss/_landing-page.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 89, ../scss/_landing-page.scss */
+  .footer-wrapper .layout-inner-row .text {
+    width: 60%;
+    padding-right: 1.5em;
+    padding-bottom: 0;
+  }
+}
+/* line 100, ../scss/_landing-page.scss */
 .footer-wrapper .layout-inner-row h2 {
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 0;
   margin-bottom: .5em;
   line-height: 1.3;
 }
+@media only screen and (min-width: 40.063em) {
+  /* line 100, ../scss/_landing-page.scss */
+  .footer-wrapper .layout-inner-row h2 {
+    font-size: 2em;
+  }
+}
 
-/* line 83, ../scss/_landing-page.scss */
+/* line 114, ../scss/_landing-page.scss */
 .showcase-wrapper {
   background: #E8E7EC;
 }
-/* line 88, ../scss/_landing-page.scss */
+/* line 119, ../scss/_landing-page.scss */
 .showcase-wrapper h2 {
   margin-top: 0;
   color: #271448;
 }
-/* line 93, ../scss/_landing-page.scss */
+/* line 124, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-wrapper {
   margin: 1em 0;
 }
-/* line 97, ../scss/_landing-page.scss */
+/* line 128, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel.inline {
   padding: 0;
   display: inline-block;
@@ -9324,65 +9410,65 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   width: 19%;
   margin: 0 .625%;
 }
-/* line 104, ../scss/_landing-page.scss */
+/* line 135, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel.inline a {
   display: block;
   opacity: .7;
 }
-/* line 108, ../scss/_landing-page.scss */
+/* line 139, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel.inline a:hover {
   opacity: 1;
 }
-/* line 111, ../scss/_landing-page.scss */
+/* line 142, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel.inline a:hover .fa-plus-circle {
   color: #271448;
 }
-/* line 117, ../scss/_landing-page.scss */
+/* line 148, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel.inline .panel {
   padding: 0;
   margin: 0;
   border: none;
   background: white;
 }
-/* line 123, ../scss/_landing-page.scss */
+/* line 154, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel.inline:first-child {
   margin-left: 0;
 }
-/* line 126, ../scss/_landing-page.scss */
+/* line 157, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel.inline:last-child {
   margin-right: 0;
 }
-/* line 130, ../scss/_landing-page.scss */
+/* line 161, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel.quote {
   padding: 0;
 }
-/* line 133, ../scss/_landing-page.scss */
+/* line 164, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel.quote .panel {
   margin: 0;
   background: white;
   border: none;
 }
-/* line 140, ../scss/_landing-page.scss */
+/* line 171, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel p, .showcase-wrapper .media-object-panel h3 {
   margin: 0;
 }
-/* line 144, ../scss/_landing-page.scss */
+/* line 175, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel .image {
   height: 230px;
 }
-/* line 147, ../scss/_landing-page.scss */
+/* line 178, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel .image.steven-mazur {
   background: url("../images/showcase/steven-mazur.jpg");
   background-position: center top;
   background-size: cover;
 }
-/* line 152, ../scss/_landing-page.scss */
+/* line 183, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel .image.zach-olson {
   background: url("../images/showcase/zach-olson.jpg");
   background-position: center top;
   background-size: cover;
 }
-/* line 158, ../scss/_landing-page.scss */
+/* line 189, ../scss/_landing-page.scss */
 .showcase-wrapper .media-object-panel .text {
   padding: .5em 1em;
 }
@@ -9410,74 +9496,126 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
 }
 /* line 21, ../scss/_ourjourney-page.scss */
 .title-wrapper .logo-wrapper {
+  padding: .3em .5em;
+  font-size: .8em;
+  border: 2px solid white;
   color: white;
-  border: 3px solid white;
-  font-size: 1em;
 }
-/* line 26, ../scss/_ourjourney-page.scss */
+/* line 27, ../scss/_ourjourney-page.scss */
 .title-wrapper .logo-wrapper:hover, .title-wrapper .logo-wrapper:active {
   border-color: #271448;
   background: #271448;
 }
+@media only screen and (min-width: 40.063em) {
+  /* line 21, ../scss/_ourjourney-page.scss */
+  .title-wrapper .logo-wrapper {
+    border: 3px solid white;
+    font-size: 1em;
+    padding: .5em 1em;
+  }
+}
 
-/* line 33, ../scss/_ourjourney-page.scss */
+/* line 40, ../scss/_ourjourney-page.scss */
 .articles-wrapper {
   background: #E8E7EC;
 }
-/* line 36, ../scss/_ourjourney-page.scss */
+/* line 43, ../scss/_ourjourney-page.scss */
 .articles-wrapper .row + .row {
   padding-top: 0;
 }
-/* line 40, ../scss/_ourjourney-page.scss */
+/* line 47, ../scss/_ourjourney-page.scss */
 .articles-wrapper h2 {
   color: #271448;
   margin: 0;
 }
-/* line 45, ../scss/_ourjourney-page.scss */
+/* line 52, ../scss/_ourjourney-page.scss */
 .articles-wrapper .panel-link {
   display: block;
   opacity: .7;
 }
-/* line 49, ../scss/_ourjourney-page.scss */
+/* line 56, ../scss/_ourjourney-page.scss */
 .articles-wrapper .panel-link:hover, .articles-wrapper .panel-link:active {
   opacity: 1;
 }
-/* line 53, ../scss/_ourjourney-page.scss */
+/* line 60, ../scss/_ourjourney-page.scss */
 .articles-wrapper .panel {
   position: relative;
   overflow: hidden;
-  min-height: 250px;
+  min-height: 350px;
 }
-/* line 58, ../scss/_ourjourney-page.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 60, ../scss/_ourjourney-page.scss */
+  .articles-wrapper .panel {
+    min-height: 250px;
+  }
+}
+/* line 69, ../scss/_ourjourney-page.scss */
 .articles-wrapper .text {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   background: white;
   padding: 1em 1.5em;
-  width: 50%;
-  top: 0;
-  right: -1px;
+  width: 100%;
+  height: 100%;
+  top: 155px;
 }
-/* line 67, ../scss/_ourjourney-page.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 69, ../scss/_ourjourney-page.scss */
+  .articles-wrapper .text {
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+/* line 85, ../scss/_ourjourney-page.scss */
 .articles-wrapper .text h4 {
   margin: 0;
   line-height: 1.3;
   padding-bottom: .5em;
   border-bottom: 1px solid #271448;
 }
-/* line 73, ../scss/_ourjourney-page.scss */
+/* line 91, ../scss/_ourjourney-page.scss */
 .articles-wrapper .text p {
   padding-top: .5em;
+  margin: 0;
 }
-/* line 77, ../scss/_ourjourney-page.scss */
+/* line 96, ../scss/_ourjourney-page.scss */
 .articles-wrapper .image-wrapper {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
-/* line 84, ../scss/_ourjourney-page.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 96, ../scss/_ourjourney-page.scss */
+  .articles-wrapper .image-wrapper {
+    height: 100%;
+    width: auto;
+  }
+}
+/* line 110, ../scss/_ourjourney-page.scss */
+.articles-wrapper .image-wrapper img {
+  height: auto;
+  width: 100%;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 110, ../scss/_ourjourney-page.scss */
+  .articles-wrapper .image-wrapper img {
+    width: auto;
+    height: 100%;
+  }
+}
+/* line 121, ../scss/_ourjourney-page.scss */
 .articles-wrapper .sign-up {
   padding-top: 1em;
   border-top: 2px solid #271448;
+}
+/* line 125, ../scss/_ourjourney-page.scss */
+.articles-wrapper .sign-up h5 {
+  margin: 0;
+  padding-bottom: .5em;
 }
