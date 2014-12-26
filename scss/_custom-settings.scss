@@ -90,11 +90,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 	position: fixed;
 }
 .reveal-modal {
+	// To force it to be 100% wide for mobile
 	width: 100%;
-
-	@media #{$medium-up} {
-		width: inherit;
-	}
 
 	&.article {
 		padding: 0;
