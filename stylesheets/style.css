@@ -9147,27 +9147,26 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
 /* line 92, ../scss/_custom-settings.scss */
 .reveal-modal, dialog {
   width: 100%;
-  overflow: hidden;
 }
-/* line 97, ../scss/_custom-settings.scss */
+/* line 96, ../scss/_custom-settings.scss */
 .reveal-modal.article, dialog.article {
   padding: 0;
   border: none;
   border-radius: 0;
 }
-/* line 102, ../scss/_custom-settings.scss */
+/* line 101, ../scss/_custom-settings.scss */
 .reveal-modal.article .image-wrapper, dialog.article .image-wrapper {
   position: relative;
   height: 10rem;
   overflow: hidden;
 }
 @media (min-width: 500px) {
-  /* line 102, ../scss/_custom-settings.scss */
+  /* line 101, ../scss/_custom-settings.scss */
   .reveal-modal.article .image-wrapper, dialog.article .image-wrapper {
     height: 15rem;
   }
 }
-/* line 110, ../scss/_custom-settings.scss */
+/* line 109, ../scss/_custom-settings.scss */
 .reveal-modal.article .image-wrapper .title, dialog.article .image-wrapper .title {
   position: absolute;
   z-index: 3;
@@ -9178,7 +9177,7 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   color: white;
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.35);
 }
-/* line 120, ../scss/_custom-settings.scss */
+/* line 119, ../scss/_custom-settings.scss */
 .reveal-modal.article .image-wrapper .overlay, dialog.article .image-wrapper .overlay {
   overflow: hidden;
   position: absolute;
@@ -9187,7 +9186,7 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 128, ../scss/_custom-settings.scss */
+/* line 127, ../scss/_custom-settings.scss */
 .reveal-modal.article .image-wrapper img, dialog.article .image-wrapper img {
   position: absolute;
   z-index: 1;
@@ -9197,70 +9196,70 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   top: 0%;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 128, ../scss/_custom-settings.scss */
+  /* line 127, ../scss/_custom-settings.scss */
   .reveal-modal.article .image-wrapper img, dialog.article .image-wrapper img {
     top: -30%;
     width: 100%;
     height: auto;
   }
 }
-/* line 144, ../scss/_custom-settings.scss */
+/* line 143, ../scss/_custom-settings.scss */
 .reveal-modal.article .text, dialog.article .text {
   width: 100%;
   padding: 1rem 1.5rem;
 }
-/* line 148, ../scss/_custom-settings.scss */
+/* line 147, ../scss/_custom-settings.scss */
 .reveal-modal.article .text .author, dialog.article .text .author {
   margin: 0;
   font-weight: bold;
 }
-/* line 152, ../scss/_custom-settings.scss */
+/* line 151, ../scss/_custom-settings.scss */
 .reveal-modal.article .text .date, dialog.article .text .date {
   margin: 0;
   padding-bottom: 1em;
   border-bottom: 2px solid #271448;
 }
-/* line 157, ../scss/_custom-settings.scss */
+/* line 156, ../scss/_custom-settings.scss */
 .reveal-modal.article .text .leading-content, dialog.article .text .leading-content {
   margin-top: 0;
   padding-top: 1em;
 }
-/* line 161, ../scss/_custom-settings.scss */
+/* line 160, ../scss/_custom-settings.scss */
 .reveal-modal.article .text .content-image, dialog.article .text .content-image {
   clear: both;
   width: 100%;
   padding-bottom: 1.5em;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 161, ../scss/_custom-settings.scss */
+  /* line 160, ../scss/_custom-settings.scss */
   .reveal-modal.article .text .content-image, dialog.article .text .content-image {
     width: 50%;
     padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 171, ../scss/_custom-settings.scss */
+  /* line 170, ../scss/_custom-settings.scss */
   .reveal-modal.article .text .content-image.right, dialog.article .text .content-image.right {
     padding-left: 3em;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 176, ../scss/_custom-settings.scss */
+  /* line 175, ../scss/_custom-settings.scss */
   .reveal-modal.article .text .content-image.left, dialog.article .text .content-image.left {
     padding-right: 3em;
   }
 }
 
-/* line 186, ../scss/_custom-settings.scss */
+/* line 185, ../scss/_custom-settings.scss */
 .reveal-modal .close-reveal-modal, dialog .close-reveal-modal, dialog .close-reveal-modal {
   z-index: 100;
 }
-/* line 189, ../scss/_custom-settings.scss */
+/* line 188, ../scss/_custom-settings.scss */
 .reveal-modal .close-reveal-modal:hover, dialog .close-reveal-modal:hover, .reveal-modal .close-reveal-modal:active, dialog .close-reveal-modal:active, dialog .close-reveal-modal:hover, dialog .close-reveal-modal:active {
   color: white;
 }
 
-/* line 194, ../scss/_custom-settings.scss */
+/* line 193, ../scss/_custom-settings.scss */
 .plus-button {
   display: -webkit-box;
   display: -moz-box;
@@ -9270,14 +9269,14 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   min-height: 100%;
   height: 100%;
 }
-/* line 199, ../scss/_custom-settings.scss */
+/* line 198, ../scss/_custom-settings.scss */
 .plus-button .fa-plus-circle {
   margin: auto;
   font-size: 3em;
   color: #E8E7EC;
 }
 
-/* line 206, ../scss/_custom-settings.scss */
+/* line 205, ../scss/_custom-settings.scss */
 .panel {
   padding: 0;
   border: none;

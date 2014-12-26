@@ -92,7 +92,6 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 .reveal-modal {
 	// To force it to be 100% wide for mobile
 	width: 100%;
-	overflow: hidden;
 
 	&.article {
 		padding: 0;
