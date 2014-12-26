@@ -92,6 +92,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 .reveal-modal {
 	// To force it to be 100% wide for mobile
 	width: 100%;
+	overflow: hidden;
 
 	&.article {
 		padding: 0;
@@ -111,6 +112,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 				z-index: 3;
 				bottom: 1rem;
 				left: 1.5rem;
+				right: 1.5rem;
+				line-height: 1.1;
 				color: $white;
 				text-shadow: 1px 1px 1px rgba(50,50,50,.35);
 			}
@@ -182,6 +185,10 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 .reveal-modal .close-reveal-modal, dialog .close-reveal-modal {
 	z-index: 100;
+
+	&:hover, &:active {
+		color: $white;
+	}
 }
 
 .plus-button {
