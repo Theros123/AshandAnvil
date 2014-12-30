@@ -37,8 +37,13 @@
 	}
 }
 
+// Abstract later
+.embedded {
+	padding-top: 1em;
+	border-top: 1px solid $purple;	
+}
+
 .articles-wrapper {
-	background: $grey;
 
 	.row + .row {
 		padding-top: 0;
@@ -47,6 +52,10 @@
 	h2 {
 		color: $purple;
 		margin: 0;
+	}
+
+	.media-object-wrapper {
+		margin-top: 1.5em;
 	}
 	
 	.panel-link {

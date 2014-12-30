@@ -9045,29 +9045,34 @@ th.hide-for-touch {
   }
 }
 /* Mixins */
-/* line 4, ../scss/_custom-settings.scss */
+/* line 9, ../scss/_custom-settings.scss */
 html, body {
   height: 100%;
   position: relative;
 }
 
-/* line 8, ../scss/_custom-settings.scss */
+/* line 13, ../scss/_custom-settings.scss */
 .landing-page {
   min-height: 830px;
 }
 
-/* line 12, ../scss/_custom-settings.scss */
+/* line 16, ../scss/_custom-settings.scss */
+.our-journey {
+  background: #E8E7EC;
+}
+
+/* line 20, ../scss/_custom-settings.scss */
 h1, h2, h3, h4, h5, p {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 15, ../scss/_custom-settings.scss */
+/* line 23, ../scss/_custom-settings.scss */
 p {
   line-height: 1.5;
   font-weight: 100;
 }
 
-/* line 26, ../scss/_custom-settings.scss */
+/* line 29, ../scss/_custom-settings.scss */
 .logo-wrapper {
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
@@ -9075,47 +9080,47 @@ p {
   transition: background-color 300ms ease-out;
 }
 
-/* line 33, ../scss/_custom-settings.scss */
+/* line 36, ../scss/_custom-settings.scss */
 .layout-row {
   padding: 3em 0;
 }
 
-/* line 37, ../scss/_custom-settings.scss */
+/* line 40, ../scss/_custom-settings.scss */
 .button {
   font-family: 'Roboto', sans-serif;
   padding: .7em 2em;
   margin: 0;
 }
-/* line 42, ../scss/_custom-settings.scss */
+/* line 45, ../scss/_custom-settings.scss */
 .button.white {
   background: transparent;
   border: 3px solid white;
   color: white;
 }
-/* line 47, ../scss/_custom-settings.scss */
+/* line 50, ../scss/_custom-settings.scss */
 .button.white:hover, .button.white:active {
   background: white;
   color: #271448;
 }
-/* line 51, ../scss/_custom-settings.scss */
+/* line 54, ../scss/_custom-settings.scss */
 .button.white.sign-up-button {
   border-left: 0;
   border-top: 1px solid white;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
 }
-/* line 58, ../scss/_custom-settings.scss */
+/* line 61, ../scss/_custom-settings.scss */
 .button.grey {
   background: transparent;
   border: 3px solid #333;
   color: #333;
 }
-/* line 63, ../scss/_custom-settings.scss */
+/* line 66, ../scss/_custom-settings.scss */
 .button.grey:hover, .button.grey:active {
   background: white;
   color: #271448;
 }
-/* line 67, ../scss/_custom-settings.scss */
+/* line 70, ../scss/_custom-settings.scss */
 .button.grey.sign-up-button {
   border-left: 0;
   border-top: 1px solid #333;
@@ -9123,50 +9128,50 @@ p {
   border-bottom: 1px solid #333;
 }
 
-/* line 75, ../scss/_custom-settings.scss */
+/* line 78, ../scss/_custom-settings.scss */
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
   margin: 0;
 }
-/* line 78, ../scss/_custom-settings.scss */
+/* line 81, ../scss/_custom-settings.scss */
 input[type="text"].white, input[type="password"].white, input[type="date"].white, input[type="datetime"].white, input[type="datetime-local"].white, input[type="month"].white, input[type="week"].white, input[type="email"].white, input[type="number"].white, input[type="search"].white, input[type="tel"].white, input[type="time"].white, input[type="url"].white, input[type="color"].white, textarea.white {
   color: white;
   background: transparent;
 }
-/* line 82, ../scss/_custom-settings.scss */
+/* line 85, ../scss/_custom-settings.scss */
 input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, input[type="datetime"].grey, input[type="datetime-local"].grey, input[type="month"].grey, input[type="week"].grey, input[type="email"].grey, input[type="number"].grey, input[type="search"].grey, input[type="tel"].grey, input[type="time"].grey, input[type="url"].grey, input[type="color"].grey, textarea.grey {
   color: #333;
   background: transparent;
   border: 1px solid #333;
 }
 
-/* line 89, ../scss/_custom-settings.scss */
+/* line 92, ../scss/_custom-settings.scss */
 .reveal-modal-bg {
   position: fixed;
 }
 
-/* line 92, ../scss/_custom-settings.scss */
+/* line 95, ../scss/_custom-settings.scss */
 .reveal-modal, dialog {
   width: 100%;
 }
-/* line 96, ../scss/_custom-settings.scss */
+/* line 99, ../scss/_custom-settings.scss */
 .reveal-modal.article, dialog.article {
   padding: 0;
   border: none;
   border-radius: 0;
 }
-/* line 101, ../scss/_custom-settings.scss */
+/* line 104, ../scss/_custom-settings.scss */
 .reveal-modal.article .image-wrapper, dialog.article .image-wrapper {
   position: relative;
   height: 10rem;
   overflow: hidden;
 }
 @media (min-width: 500px) {
-  /* line 101, ../scss/_custom-settings.scss */
+  /* line 104, ../scss/_custom-settings.scss */
   .reveal-modal.article .image-wrapper, dialog.article .image-wrapper {
     height: 15rem;
   }
 }
-/* line 109, ../scss/_custom-settings.scss */
+/* line 112, ../scss/_custom-settings.scss */
 .reveal-modal.article .image-wrapper .title, dialog.article .image-wrapper .title {
   position: absolute;
   z-index: 3;
@@ -9177,7 +9182,7 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   color: white;
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.35);
 }
-/* line 119, ../scss/_custom-settings.scss */
+/* line 122, ../scss/_custom-settings.scss */
 .reveal-modal.article .image-wrapper .overlay, dialog.article .image-wrapper .overlay {
   overflow: hidden;
   position: absolute;
@@ -9186,7 +9191,7 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 127, ../scss/_custom-settings.scss */
+/* line 130, ../scss/_custom-settings.scss */
 .reveal-modal.article .image-wrapper img, dialog.article .image-wrapper img {
   position: absolute;
   z-index: 1;
@@ -9196,70 +9201,70 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   top: 0%;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 127, ../scss/_custom-settings.scss */
+  /* line 130, ../scss/_custom-settings.scss */
   .reveal-modal.article .image-wrapper img, dialog.article .image-wrapper img {
     top: -30%;
     width: 100%;
     height: auto;
   }
 }
-/* line 143, ../scss/_custom-settings.scss */
+/* line 146, ../scss/_custom-settings.scss */
 .reveal-modal.article .text, dialog.article .text {
   width: 100%;
   padding: 1rem 1.5rem;
 }
-/* line 147, ../scss/_custom-settings.scss */
+/* line 150, ../scss/_custom-settings.scss */
 .reveal-modal.article .text .author, dialog.article .text .author {
   margin: 0;
   font-weight: bold;
 }
-/* line 151, ../scss/_custom-settings.scss */
+/* line 154, ../scss/_custom-settings.scss */
 .reveal-modal.article .text .date, dialog.article .text .date {
   margin: 0;
   padding-bottom: 1em;
   border-bottom: 2px solid #271448;
 }
-/* line 156, ../scss/_custom-settings.scss */
+/* line 159, ../scss/_custom-settings.scss */
 .reveal-modal.article .text .leading-content, dialog.article .text .leading-content {
   margin-top: 0;
   padding-top: 1em;
 }
-/* line 160, ../scss/_custom-settings.scss */
+/* line 163, ../scss/_custom-settings.scss */
 .reveal-modal.article .text .content-image, dialog.article .text .content-image {
   clear: both;
   width: 100%;
   padding-bottom: 1.5em;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 160, ../scss/_custom-settings.scss */
+  /* line 163, ../scss/_custom-settings.scss */
   .reveal-modal.article .text .content-image, dialog.article .text .content-image {
     width: 50%;
     padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 170, ../scss/_custom-settings.scss */
+  /* line 173, ../scss/_custom-settings.scss */
   .reveal-modal.article .text .content-image.right, dialog.article .text .content-image.right {
     padding-left: 3em;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 175, ../scss/_custom-settings.scss */
+  /* line 178, ../scss/_custom-settings.scss */
   .reveal-modal.article .text .content-image.left, dialog.article .text .content-image.left {
     padding-right: 3em;
   }
 }
 
-/* line 185, ../scss/_custom-settings.scss */
+/* line 188, ../scss/_custom-settings.scss */
 .reveal-modal .close-reveal-modal, dialog .close-reveal-modal, dialog .close-reveal-modal {
   z-index: 100;
 }
-/* line 188, ../scss/_custom-settings.scss */
+/* line 191, ../scss/_custom-settings.scss */
 .reveal-modal .close-reveal-modal:hover, dialog .close-reveal-modal:hover, .reveal-modal .close-reveal-modal:active, dialog .close-reveal-modal:active, dialog .close-reveal-modal:hover, dialog .close-reveal-modal:active {
   color: white;
 }
 
-/* line 193, ../scss/_custom-settings.scss */
+/* line 196, ../scss/_custom-settings.scss */
 .plus-button {
   display: -webkit-box;
   display: -moz-box;
@@ -9269,14 +9274,14 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   min-height: 100%;
   height: 100%;
 }
-/* line 198, ../scss/_custom-settings.scss */
+/* line 201, ../scss/_custom-settings.scss */
 .plus-button .fa-plus-circle {
   margin: auto;
   font-size: 3em;
   color: #E8E7EC;
 }
 
-/* line 205, ../scss/_custom-settings.scss */
+/* line 208, ../scss/_custom-settings.scss */
 .panel {
   padding: 0;
   border: none;
@@ -9539,41 +9544,47 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   }
 }
 
-/* line 40, ../scss/_ourjourney-page.scss */
-.articles-wrapper {
-  background: #E8E7EC;
+/* line 41, ../scss/_ourjourney-page.scss */
+.embedded {
+  padding-top: 1em;
+  border-top: 1px solid #271448;
 }
-/* line 43, ../scss/_ourjourney-page.scss */
+
+/* line 48, ../scss/_ourjourney-page.scss */
 .articles-wrapper .row + .row {
   padding-top: 0;
 }
-/* line 47, ../scss/_ourjourney-page.scss */
+/* line 52, ../scss/_ourjourney-page.scss */
 .articles-wrapper h2 {
   color: #271448;
   margin: 0;
 }
-/* line 52, ../scss/_ourjourney-page.scss */
+/* line 57, ../scss/_ourjourney-page.scss */
+.articles-wrapper .media-object-wrapper {
+  margin-top: 1.5em;
+}
+/* line 61, ../scss/_ourjourney-page.scss */
 .articles-wrapper .panel-link {
   display: block;
   opacity: .7;
 }
-/* line 56, ../scss/_ourjourney-page.scss */
+/* line 65, ../scss/_ourjourney-page.scss */
 .articles-wrapper .panel-link:hover, .articles-wrapper .panel-link:active {
   opacity: 1;
 }
-/* line 60, ../scss/_ourjourney-page.scss */
+/* line 69, ../scss/_ourjourney-page.scss */
 .articles-wrapper .panel {
   position: relative;
   overflow: hidden;
   min-height: 350px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 60, ../scss/_ourjourney-page.scss */
+  /* line 69, ../scss/_ourjourney-page.scss */
   .articles-wrapper .panel {
     min-height: 250px;
   }
 }
-/* line 69, ../scss/_ourjourney-page.scss */
+/* line 78, ../scss/_ourjourney-page.scss */
 .articles-wrapper .text {
   position: absolute;
   z-index: 3;
@@ -9584,7 +9595,7 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   top: 155px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 69, ../scss/_ourjourney-page.scss */
+  /* line 78, ../scss/_ourjourney-page.scss */
   .articles-wrapper .text {
     top: 0;
     right: 0;
@@ -9592,19 +9603,19 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
     height: 100%;
   }
 }
-/* line 85, ../scss/_ourjourney-page.scss */
+/* line 94, ../scss/_ourjourney-page.scss */
 .articles-wrapper .text h4 {
   margin: 0;
   line-height: 1.3;
   padding-bottom: .5em;
   border-bottom: 1px solid #271448;
 }
-/* line 91, ../scss/_ourjourney-page.scss */
+/* line 100, ../scss/_ourjourney-page.scss */
 .articles-wrapper .text p {
   padding-top: .5em;
   margin: 0;
 }
-/* line 96, ../scss/_ourjourney-page.scss */
+/* line 105, ../scss/_ourjourney-page.scss */
 .articles-wrapper .image-wrapper {
   position: absolute;
   top: 0;
@@ -9615,30 +9626,30 @@ input[type="text"].grey, input[type="password"].grey, input[type="date"].grey, i
   overflow: hidden;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 96, ../scss/_ourjourney-page.scss */
+  /* line 105, ../scss/_ourjourney-page.scss */
   .articles-wrapper .image-wrapper {
     height: 100%;
     width: auto;
   }
 }
-/* line 110, ../scss/_ourjourney-page.scss */
+/* line 119, ../scss/_ourjourney-page.scss */
 .articles-wrapper .image-wrapper img {
   height: auto;
   width: 100%;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 110, ../scss/_ourjourney-page.scss */
+  /* line 119, ../scss/_ourjourney-page.scss */
   .articles-wrapper .image-wrapper img {
     width: auto;
     height: 100%;
   }
 }
-/* line 121, ../scss/_ourjourney-page.scss */
+/* line 130, ../scss/_ourjourney-page.scss */
 .articles-wrapper .sign-up {
   padding-top: 1em;
   border-top: 2px solid #271448;
 }
-/* line 125, ../scss/_ourjourney-page.scss */
+/* line 134, ../scss/_ourjourney-page.scss */
 .articles-wrapper .sign-up h5 {
   margin: 0;
   padding-bottom: .5em;
