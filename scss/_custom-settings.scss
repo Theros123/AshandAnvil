@@ -24,6 +24,9 @@ p {
 	line-height: 1.5;
 	font-weight: 100;
 }
+h5 {
+	font-weight: bold;
+}
 
 // Turn this into a mixin later
 .logo-wrapper {
@@ -159,14 +162,27 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 			.leading-content {
 				margin-top: 0;
 				padding-top: 1em;
+				font-weight: normal;
+			}
+			h5 {
+				margin: 0;
+				padding: 1em 0 .5em;
+			}
+			p {
+				margin: 0;
+
+				&+ p {
+					padding-top: .5em;
+				}
 			}
 			.content-image {
 				clear: both;
 				width: 100%;
-				padding-bottom: 1.5em;
+				padding: 1.5em 0;
 
 				@media #{$medium-up} {
 					width: 50%;
+					padding-top: 1em;
 					padding-bottom: 0;
 				}
 
