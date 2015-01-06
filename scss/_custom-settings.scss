@@ -130,7 +130,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 				width: 100%;
 				background: rgba(0,0,0,.5);
 			}
-			img {
+			.bg {
 				position: absolute;
 				z-index: 1;
 				width: 100%;
@@ -175,29 +175,58 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 					padding-top: .5em;
 				}
 			}
-			.content-image {
-				clear: both;
-				width: 100%;
-				padding: 1.5em 0;
+			a {
+				color: blue;
 
-				@media #{$medium-up} {
-					width: 50%;
-					padding-top: 1em;
-					padding-bottom: 0;
+				&:hover {
+					color: $darkGrey;
+					text-decoration: underline;
 				}
+			}
+		}
+		.content-image {
+			width: 100%;
+			padding-top: 1em;
+			padding-bottom: 1em;
 
+			@media #{$medium-up} {
+				&.full-width {
+					width: 100%;
+				}
+				&.half-width {
+					width: 50%;
+				}
 				&.right {
-					@media #{$medium-up} {
-						padding-left: 3em;
-					}
+					padding-left: 3em;
 				}
 				&.left {
-					@media #{$medium-up} {
-						padding-right: 3em;
+					padding-right: 3em;
+				}
+			}
+			
+			&.full-width {
+				padding-bottom: .5em;
+
+				.image-wrapper {	
+					@media #{$large-up} {
+						height: 350px;
 					}
 				}
 			}
+			.image-wrapper {
+				height: auto;
+				overflow: hidden;
+				
+				.image {
+					width: 100%;
+				}
+			}
 
+			.cite {
+				font-style: italic;
+				padding: .5em 0;
+				word-break: break-all;
+			}
 		}
 	}
 }
