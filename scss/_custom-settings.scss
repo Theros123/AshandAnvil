@@ -12,6 +12,13 @@ html, body {
 }
 .landing-page {
 	min-height: 830px;
+
+	@media #{$medium-up} {
+		min-height: 950px;
+	}
+	@media #{$large-up} {
+		min-height: 830px;
+	}
 }
 .our-journey {
 	background: $grey;
@@ -40,6 +47,27 @@ h5 {
 	padding: 3em 0;
 }
 
+.indiegogo-button {
+	display: block;
+	background: #EB1478;
+	margin-top: 1.5em;
+	padding: 1em 1.5em;
+	color: $white;
+	@include box-shadow(1px, 2px, 3px, rgba(50,50,50,.35));
+	@include border-radius(9px);
+
+	h3, p {
+		color: $white;
+		margin: 0;
+	}
+	p {
+		font-size: 1.3em;
+	}
+
+	&:hover {
+		background: lighten(#EB1478, 10%);
+	}
+}
 .button {
 	font-family: 'Roboto', sans-serif;
 	padding: .7em 2em;
