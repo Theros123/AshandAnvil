@@ -32,7 +32,7 @@ $(function() {
     });
     
     $('.campaign').on('click', function() {
-        window.location.href = "http://www.ashandanvil.com";
+        window.location.href = "http://igg.me/at/ash-and-anvil";
     }); 
     
 });
