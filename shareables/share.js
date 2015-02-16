@@ -31,7 +31,7 @@ $(function() {
             window.open('https://twitter.com/home?status=' + title + loc, '', 'height=' + h + ', width=' + w + ', top='+top +', left='+ left +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
     });
     
-    $('.play').on('click', function() {
+    $('.campaign').on('click', function() {
         window.location.href = "http://igg,me/at/ash-and-anvil";
     }); 
     
