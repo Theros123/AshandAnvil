@@ -15,14 +15,14 @@ $(function() {
             
             
             if ((screen.width < 480) || (screen.height < 480)) {
-                window.open ('http://www.facebook.com/share.php?u=http://igg,me/at/ash-and-anvil', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+                window.open ('http://www.facebook.com/share.php?u=http://igg.me/at/ash-and-anvil', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
             } else {
-                window.open ('http://www.facebook.com/share.php?u=http://igg,me/at/ash-and-anvil', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);   
+                window.open ('http://www.facebook.com/share.php?u=http://igg.me/at/ash-and-anvil', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);   
             }
     });
     
     $('.twitter').on('click', function() {
-        var loc = encodeURIComponent('http://igg,me/at/ash-and-anvil'),
+        var loc = encodeURIComponent('http://igg.me/at/ash-and-anvil'),
             title = encodeURIComponent('Ash & Anvil - Everyday clothes for shorter guys - '),
             w = 580, h = 300,
             left = (screen.width/2)-(w/2),
@@ -32,7 +32,7 @@ $(function() {
     });
     
     $('.campaign').on('click', function() {
-        window.location.href = "http://igg,me/at/ash-and-anvil";
+        window.location.href = "http://igg.me/at/ash-and-anvil";
     }); 
     
 });
